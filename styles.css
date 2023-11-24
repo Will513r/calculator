@@ -2,3 +2,10 @@ body{
     background-color: black;
     color: aliceblue;
 }
+
+.calculator{
+    border-style: dotted;
+    border-color: brown;
+    margin: 100px;
+    
+}

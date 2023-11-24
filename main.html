@@ -13,7 +13,7 @@
    
   <div class="container calculator">
     <div class="row">
-     <div class="display" id="calculator">
+     <div class="display calculator-display" id="calculator">
         <textarea class="form-control" id="display" rows="2"></textarea>
         
   </div>
@@ -28,11 +28,11 @@
       
     </div>
     <div class="col">
-        <button type="button" class="btn btn-light">%</button>
+        <button type="button" onclick="appendToDisplay('%')" class="btn btn-light">%</button>
       
     </div>
     <div class="col">
-        <button type="button" class="btn btn-light">÷</button>
+        <button type="button"  onclick="appendToDisplay('/')" class="btn btn-light">/</button>
       
     </div>
   </div>
@@ -50,7 +50,7 @@
       
     </div>
     <div class="col">
-        <button type="button" class="btn btn-light">x</button>
+        <button type="button" onclick="appendToDisplay('*')" class="btn btn-light">*</button>
       
     </div>
   </div>
@@ -68,7 +68,7 @@
       
     </div>
     <div class="col">
-        <button id="subtract-button" type="button" class="btn btn-light">-</button>
+        <button id="subtract-button" onclick="appendToDisplay('-')" type="button" class="btn btn-light">-</button>
       
     </div>
   </div>
@@ -86,7 +86,7 @@
       
     </div>
     <div class="col">
-        <button id="add-button" onclick="addInputField()" type="button" class="btn btn-light">+</button>
+        <button id="add-button" onclick="appendToDisplay('+')" type="button" class="btn btn-light">+</button>
       
     </div>
   </div>

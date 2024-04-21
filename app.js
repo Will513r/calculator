@@ -1,4 +1,4 @@
-let displayValue = ' ';
+let displayValue = " ";
 const deleteButton = document.getElementById("delete-button");
 const addButton = document.getElementById("add-button");
 const subtractButton = document.getElementById("subtract-button");
@@ -26,13 +26,13 @@ function deleteCharacter() {
   updateDisplay();
 }
 
-function playClip(){
-   if (voiceClip.paused || voiceClip.ended) {
-     voiceClip.play(); 
-   } else {
-     voiceClip.pause(); 
-     voiceClip.currentTime = 0; 
-   }
+function playClip() {
+  if (voiceClip.paused || voiceClip.ended) {
+    voiceClip.play();
+  } else {
+    voiceClip.pause();
+    voiceClip.currentTime = 0;
+  }
 }
 
 function clearDisplay() {

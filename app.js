@@ -44,7 +44,6 @@ function calculate() {
   if (displayValue === " ") {
     return;
   }
-
   try {
     const result = eval(displayValue);
     displayValue = result.toString();
